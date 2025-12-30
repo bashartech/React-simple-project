@@ -193,9 +193,7 @@ const HeroSection = () => {
           </div>
           <div className="w-1/2 lg:mt-16 h-full flex justify-center items-end">
           <div className="relative">
-            {/* <div className="mt-50">
-              <img src="/card.png" alt="Hero section placeholder"></img>
-            </div> */}
+          
               <div className="w-[758px] h-[1000px]  ">
                 <img
                   src="/r25.PNG"
@@ -203,12 +201,7 @@ const HeroSection = () => {
                   className="w-full h-full "
                 />
               </div>
-               {/* <div>
-              <img src="/card (1).png" alt="Hero section placeholder"></img>
-            </div> */}
-
-              {/* <div ref={el => el && (floatingElementsRef.current[2] = el)} className="absolute -top-4 -right-4 sm:-top-6 sm:-right-6 w-16 h-16 sm:w-20 sm:h-20 bg-yellow-400 rounded-full opacity-80 animate-bounce"></div>
-              <div ref={el => el && (floatingElementsRef.current[3] = el)} className="absolute -bottom-6 -left-6 sm:-bottom-8 sm:-left-8 w-12 h-12 sm:w-16 sm:h-16 bg-blue-400 rounded-full opacity-60 animate-pulse"></div> */}
+               
             </div>
           
           </div>

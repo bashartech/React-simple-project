@@ -4,10 +4,10 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import HeroSection from './components/HeroSection';
 import FeaturesSection from './components/FeaturesSection';
 import ServicesSection from './components/ServicesSection';
-import StatsSection from './components/StatsSection';
+import InstallAppSection from './components/InstallAppSection';
 import TestimonialsSection from './components/TestimonialsSection';
-import PricingSection from './components/PricingSection';
-import CTASection from './components/CTASection';
+import DonateSection from './components/DonateSection';
+import DownloadSection from './components/DownloadSection';
 
 // Register GSAP plugins
 gsap.registerPlugin(ScrollTrigger);
@@ -47,10 +47,10 @@ function App() {
       <HeroSection />
       <FeaturesSection />
       <ServicesSection />
-      <StatsSection />
-      <PricingSection />
+      <InstallAppSection />
+      <DonateSection />
       <TestimonialsSection />
-      <CTASection />
+      <DownloadSection />
     </div>
   )
 }
