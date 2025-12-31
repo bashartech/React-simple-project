@@ -141,10 +141,10 @@ const DonateSection = () => {
   return (
     <section
       ref={heroRef}
-      className="w-full px-4 py-8 md:py-12 lg:py-16 relative overflow-hidden"
+      className="w-full lg:px-4 py-8 md:py-12 lg:py-16 relative overflow-hidden"
     >
       <div className="flex flex-col lg:flex-row items-center bg-red-500 from-orange-500 via-red-500 to-red-600 rounded-3xl justify-center">
-        <div className="w-full max-w-7xl mx-auto p-4 sm:p-6">
+        <div className="w-full max-w-7xl mx-auto  sm:p-6">
           <div className="flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-0">
             {/* Text content */}
             <div className="w-full lg:w-1/2 flex flex-col items-center lg:items-start text-center lg:text-left">
