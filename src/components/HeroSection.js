@@ -141,7 +141,7 @@ const HeroSection = () => {
   return (
     <section
       ref={heroRef}
-      className="w-full bg-[#FF5349] px-4 py-8 md:py-12 lg:py-20 relative overflow-hidden"
+      className=" bg-[#FF5349] px-4 py-8 md:py-12 lg:py-20 relative overflow-hidden"
     >
       {/* Logo section */}
       <div className="w-full mb-6 flex justify-center items-center">
