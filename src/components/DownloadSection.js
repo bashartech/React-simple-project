@@ -145,7 +145,7 @@ const DownloadSection = () => {
     >
 
       <div className="flex flex-col lg:flex-row items-center bg-red-500 from-orange-500 via-red-500 to-red-600 rounded-lg justify-center">
-        <div className="w-full max-w-7xl mx-auto p-4 sm:p-6">
+        <div className="w-full max-w-7xl  p-4 sm:p-6">
           <div className="flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-0">
             <div className="w-full lg:w-1/2 flex flex-col items-center lg:items-start text-center lg:text-left">
               <div className="space-y-6 w-full max-w-3xl ">

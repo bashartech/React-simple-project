@@ -153,7 +153,7 @@ const HeroSection = () => {
       </div>
 
       {/* Main content */}
-      <div className="container mx-auto px-4">
+      <div className="container ">
         <div className="flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-0">
           {/* Text content */}
           <div className="w-full lg:w-1/2 flex flex-col items-center lg:items-start text-center lg:text-left">
