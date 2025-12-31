@@ -141,77 +141,63 @@ const HeroSection = () => {
   return (
     <section
       ref={heroRef}
-      className="w-full min-h-screen h-[1163px]  bg-[#FF5349] from-orange-500 via-red-500 to-red-600  px-4 py-20 relative overflow-hidden"
-      style={{
-        width: '1920px',
-        minHeight: '1163px',
-        maxWidth: '100vw',
-        maxHeight: '100vh'
-      }}
+      className="w-full bg-[#FF5349] px-4 py-8 md:py-12 lg:py-20 relative overflow-hidden"
     >
-<div className="w-full mb-6 flex  justify-center items-center">
-      <img src="/Group 12.png" alt="" />
-</div>
-<div className="flex items-center justify-center">
-      <div className="w-full h-full p-5">
-        <div className="w-full h-full flex justify-center items-start ">
-          <div className="w-1/2 flex justify-center items-center">
+      {/* Logo section */}
+      <div className="w-full mb-6 flex justify-center items-center">
+        <img
+          src="/Group 12.png"
+          alt="Logo"
+          className="max-w-full h-auto"
+        />
+      </div>
 
-           <div className="text-center lg:text-left space-y-4">
-            <div className="space-y-0 w-[951px] flex justify-center items-center">
-              <div>
+      {/* Main content */}
+      <div className="container mx-auto px-4">
+        <div className="flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-0">
+          {/* Text content */}
+          <div className="w-full lg:w-1/2 flex flex-col items-center lg:items-start text-center lg:text-left">
+            <div className="space-y-6 w-full max-w-3xl mx-auto">
               <h1
                 ref={titleRef}
-                className="text-5xl md:text-6xl lg:text-7xl font-bold text-white  leading-tight"
+                className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-poppins text-white leading-tight"
               >
-
-                <p className="lg:text-8xl font-sans p-0 m-10">Stay Connected</p>
-                <p className="lg:text-8xl font-outfit p-0 m-10">Stay Social</p>
-                <p className="lg:text-8xl font-outfit p-0 m-10">Stay You!</p>
+                <p className="font-poppins mb-2 sm:mb-3 md:mb-4 h-9 text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl">Stay Connected</p>
+                <p className="font-poppins h-9 mb-2 sm:mb-3 md:mb-4 text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl">Stay Social</p>
+                <p className="font-poppins h-9 text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl">Stay You!</p>
               </h1>
               <p
                 ref={subtitleRef}
-                className="text-xl pl-10 md:text-2xl text-white/90 leading-relaxed max-w-2xl mx-auto lg:mx-0"
+                className="text-base sm:text-lg md:text-xl text-white/90 leading-relaxed max-w-2xl mx-auto lg:mx-0"
               >
-                A place where friendships grow, communities thrive, and moments turn into unforgettable experiences. Whether you're looking to reconnect with old friends, build new relationships, or share what matters most to you – MyBindle is your home on the internet.
+                A place where friendships grow, communities thrive, and moments turn into unforgettable experiences. Whether you're looking to reconnect with old friends, build new relationships, or share what matters most to you  MyBindle is your home on the internet.
               </p>
-            <div
-              ref={buttonRef}
-              className="flex flex-col pl-10 sm:flex-row gap-4 justify-center lg:justify-start"
-            >
-              <button className="px-8 py-4 w-60 h-20  bg-white text-red-600 font-semibold rounded-xl hover:bg-gray-100 text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-xl">
-                Get Started
-              </button>
-             
-            </div>
-            </div>
-
+              <div
+                ref={buttonRef}
+                className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mt-6"
+              >
+                <button className="px-6 py-3 sm:px-8 sm:py-4 w-full sm:w-auto bg-white text-red-600 font-semibold rounded-xl hover:bg-gray-100 text-base sm:text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-xl">
+                  Get Started
+                </button>
               </div>
-
+            </div>
           </div>
 
-          </div>
-          <div className="w-1/2 lg:mt-16 h-full flex justify-center items-end">
-          <div className="relative">
-          
-              <div className="w-[758px] h-[1000px]  ">
+          {/* Image content */}
+          <div className="w-full lg:w-1/2 flex justify-center items-center mt-8 lg:mt-0">
+            <div className="relative w-full max-w-md lg:max-w-lg xl:max-w-xl">
+              <div className="w-full h-auto">
                 <img
+                  ref={imageRef}
                   src="/r25.PNG"
                   alt="Hero section placeholder"
-                  className="w-full h-full "
+                  className="w-full h-auto object-contain rounded-lg "
                 />
               </div>
-               
             </div>
-          
           </div>
-
         </div>
       </div>
-
-</div>
-
-      
     </section>
   );
 };

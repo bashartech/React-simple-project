@@ -22,8 +22,9 @@ function App() {
     sections.forEach((section, index) => {
       ScrollTrigger.create({
         trigger: section,
-        start: "top center",
-        end: "bottom center",
+        start: "top 90%",
+        end: "bottom 10%",
+        toggleClass: { targets: section, className: "active" },
         onEnter: () => {
           // Optional: Add scroll-based animations or effects
         },
@@ -42,7 +43,7 @@ function App() {
   return (
     <div
       ref={containerRef}
-      className="app font-poppins w-full min-h-screen overflow-x-hidden scroll-smooth"
+      className="app font-poppins w-full overflow-x-hidden scroll-smooth"
     >
       <HeroSection />
       <FeaturesSection />

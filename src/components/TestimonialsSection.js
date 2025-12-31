@@ -163,54 +163,48 @@ const TestimonialsSection = () => {
   return (
     <section
       ref={sectionRef}
-      className="w-full py-20 bg-gradient-to-br from-indigo-50 to-purple-100"
-      style={{
-        width: '1920px',
-        minHeight: '1163px',
-        maxWidth: '100vw',
-        maxHeight: '100vh'
-      }}
+      className="w-full py-12 md:py-16 lg:py-20 bg-gradient-to-br from-indigo-50 to-purple-100"
     >
       <div className="max-w-7xl mx-auto px-4">
-        <div className="text-center mb-16">
+        <div className="text-center mb-10 sm:mb-16">
           <h2
             ref={titleRef}
-            className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6"
+            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-4 sm:mb-6"
           >
             What Our Clients Say
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-lg sm:text-xl text-gray-600 max-w-2xl sm:max-w-3xl mx-auto">
             Don't just take our word for it - hear from our satisfied clients around the world
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
           {testimonials.map((testimonial, index) => (
             <div
               key={index}
               ref={el => testimonialRefs.current[index] = el}
-              className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100 group perspective-1000"
+              className="bg-white p-6 sm:p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100 group"
             >
-              <div className="transform-style-preserve-3d">
-                <div className="mb-6 flex space-x-1">
+              <div>
+                <div className="mb-4 sm:mb-6 flex space-x-1">
                   {[...Array(testimonial.rating)].map((_, i) => (
-                    <span key={i} className="text-yellow-400 text-2xl">★</span>
+                    <span key={i} className="text-yellow-400 text-xl sm:text-2xl">★</span>
                   ))}
                 </div>
 
-                <blockquote className="text-gray-700 text-lg leading-relaxed mb-6 italic">
+                <blockquote className="text-gray-700 text-base sm:text-lg leading-relaxed mb-4 sm:mb-6 italic">
                   "{testimonial.content}"
                 </blockquote>
 
-                <div className="flex items-center space-x-4">
+                <div className="flex items-center space-x-3 sm:space-x-4">
                   <img
                     src={testimonial.avatar}
                     alt={testimonial.name}
-                    className="w-12 h-12 rounded-full object-cover"
+                    className="w-10 h-10 sm:w-12 sm:h-12 rounded-full object-cover"
                   />
                   <div>
-                    <div className="font-bold text-gray-900">{testimonial.name}</div>
-                    <div className="text-gray-600">{testimonial.role}</div>
+                    <div className="font-bold text-gray-900 text-sm sm:text-base">{testimonial.name}</div>
+                    <div className="text-gray-600 text-xs sm:text-sm">{testimonial.country}</div>
                   </div>
                 </div>
               </div>
@@ -218,11 +212,6 @@ const TestimonialsSection = () => {
           ))}
         </div>
 
-        {/* Decorative elements */}
-        <div className="absolute top-0 left-0 w-full h-full pointer-events-none overflow-hidden -z-10">
-          <div className="absolute top-1/3 left-1/4 w-64 h-64 bg-purple-500/10 rounded-full blur-3xl"></div>
-          <div className="absolute bottom-1/3 right-1/4 w-96 h-96 bg-indigo-500/10 rounded-full blur-3xl"></div>
-        </div>
       </div>
     </section>
   );

@@ -5,7 +5,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 // Register GSAP plugins
 gsap.registerPlugin(ScrollTrigger);
 
-const HeroSection = () => {
+const DownloadSection = () => {
   const heroRef = useRef(null);
   const titleRef = useRef(null);
   const subtitleRef = useRef(null);
@@ -141,118 +141,92 @@ const HeroSection = () => {
   return (
     <section
       ref={heroRef}
-      className="w-full min-h-screen h-[1163px]   px-4 py-20 relative overflow-hidden"
-      style={{
-        width: '1920px',
-        minHeight: '563px',
-        maxWidth: '100vw',
-        maxHeight: '800px'
-      }}
+      className="w-full px-4 py-8 md:py-12 lg:py-16 relative overflow-hidden"
     >
 
-<div className="flex items-center  bg-red-500 from-orange-500 via-red-500 to-red-600 lg:h-[850px] rounded-lg justify-center">
-      <div className="w-full h-full p-5">
-        <div className="w-full h-full flex justify-center items-start ">
-          <div className="w-1/2 h-full">
-          <div className=" flex justify-center items-center">
-
-           <div className="text-center lg:text-left space-y-4">
-            <div className="space-y-0 w-[951px] flex justify-center items-center">
-              <div>
+      <div className="flex flex-col lg:flex-row items-center bg-red-500 from-orange-500 via-red-500 to-red-600 rounded-lg justify-center">
+        <div className="w-full max-w-7xl mx-auto p-4 sm:p-6">
+          <div className="flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-0">
+            <div className="w-full lg:w-1/2 flex flex-col items-center lg:items-start text-center lg:text-left">
+              <div className="space-y-6 w-full max-w-3xl mx-auto">
               <h1
                 ref={titleRef}
-                className="text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight"
+                className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white leading-tight"
               >
-
-                <p className=" lg:text-8xl pt-10 m-10">Join the Fun – Download MyBindle Now!</p>
-                
-                
+                <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl pt-4 sm:pt-6 md:pt-10">Join the Fun – Download MyBindle Now!</p>
               </h1>
               <p
                 ref={subtitleRef}
-                className="text-xl pl-10 md:text-2xl text-white leading-relaxed max-w-2xl mx-auto lg:mx-0"
+                className="text-base sm:text-lg md:text-xl text-white leading-relaxed max-w-2xl mx-auto lg:mx-0 mt-4"
               >
-               Your Social Network, Your Way
-Download MyBindle Now and Be a Part of a Community Thats Always Evolving!
+                Your Social Network, Your Way
+                Download MyBindle Now and Be a Part of a Community Thats Always Evolving!
               </p>
-            <div
-              ref={buttonRef}
-              className="flex flex-col pl-10 sm:flex-row gap-4 justify-center lg:justify-start"
-            >
-              <button className="px-8 py-4  bg-white text-black font-semibold rounded-full hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 flex gap-3 hover:shadow-xl">
-                <div className="flex justify-center items-center">
-                <div>
-                  <img src="/Vector.png" alt="" />
-                </div>
-                </div>
-                <div className="">
-                <div className="text-sm">
-                  DOWNLOAD ON THE
-                </div>
-
-                <div className="text-2xl">
-                  App Store
-                </div>
-                </div>
-              </button>
-              <button className="px-8 py-4  bg-white text-black font-semibold rounded-full hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 flex gap-3 hover:shadow-xl">
-                <div className=" flex justify-center items-center">
-                <div>
-                  <img src="/google-play 1.png" alt="" />
-                </div>
-                </div>
-                <div className="">
-                <div>
-                  GET IT ON
-                </div>
-
-                <div  className="text-2xl">
-                  Google Play
-                </div>
-                </div>
-              </button>
-             
-            </div>
-            </div>
-
-              </div>
-
-          </div>
-
-          </div>
-          </div>
-          <div className="w-1/2 h-full flex justify-center items-end">
-          <div className="relative flex">
-            <div className="flex justify-end items-end">
-              <div className="w-[453px]  flex justify-end items-end h-[450px]">
-                <img
-                  src="/Stroke Body (3).png"
-                  alt="Hero section placeholder"
-                  className="w-full h-full "
-                />
+              <div
+                ref={buttonRef}
+                className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mt-6"
+              >
+                <button className="px-4 sm:px-6 py-3 sm:py-4 bg-white text-black font-semibold rounded-full hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 flex gap-2 sm:gap-3 items-center hover:shadow-xl min-w-[200px]">
+                  <div className="flex justify-center items-center">
+                    <div>
+                      <img src="/Vector.png" alt="App Store" className="w-6 h-6 sm:w-8 sm:h-8" />
+                    </div>
+                  </div>
+                  <div className="text-left">
+                    <div className="text-xs sm:text-sm">
+                      DOWNLOAD ON THE
+                    </div>
+                    <div className="text-lg sm:text-xl font-bold">
+                      App Store
+                    </div>
+                  </div>
+                </button>
+                <button className="px-4 sm:px-6 py-3 sm:py-4 bg-white text-black font-semibold rounded-full hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 flex gap-2 sm:gap-3 items-center hover:shadow-xl min-w-[200px]">
+                  <div className="flex justify-center items-center">
+                    <div>
+                      <img src="/google-play 1.png" alt="Google Play" className="w-6 h-6 sm:w-8 sm:h-8" />
+                    </div>
+                  </div>
+                  <div className="text-left">
+                    <div className="text-xs sm:text-sm">
+                      GET IT ON
+                    </div>
+                    <div className="text-lg sm:text-xl font-bold">
+                      Google Play
+                    </div>
+                  </div>
+                </button>
               </div>
             </div>
-              <div className="w-[420px] h-[750px]">
-                <img
-                  src="/Stroke Body (2).png"
-                  alt="Hero section placeholder"
-                  className="w-full h-full  "
-                />
-              </div>
-
-        
-            </div>
-          
           </div>
 
+          {/* Image content */}
+          <div className="w-full lg:w-1/2 flex justify-center items-center mt-8 lg:mt-0">
+            <div className="relative w-full max-w-md">
+              <div className="flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-6">
+                <div className="w-full pt-40  max-w-xs">
+                  <img
+                    ref={imageRef}
+                    src="/f2.jpg"
+                    alt="Download illustration"
+                    className="w-full h-auto object-contain"
+                  />
+                </div>
+                <div className="w-full max-w-xs">
+                  <img
+                    src="/f3.jpg"
+                    alt="Download illustration"
+                    className="w-full h-auto object-contain"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-
-</div>
-
-      
-    </section>
+    </div>
+</section>
   );
 };
 
-export default HeroSection;
+export default DownloadSection;

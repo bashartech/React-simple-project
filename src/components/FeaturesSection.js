@@ -110,50 +110,39 @@ const FeaturesSection = () => {
   return (
     <section
       ref={sectionRef}
-      className="w-full  pt-10 bg-gray-50"
-      style={{
-        width: '1920px',
-        minHeight:"868px",
-        maxWidth: '100vw',
-        maxHeight: '868px'
-      }}
+      className="w-full py-12 md:py-16 lg:py-20 bg-gray-50"
     >
-      <div className="max-w-7xl mx-auto px-4">
-        <div className="text-center mb-16">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-12 sm:mb-16">
           <h2
             ref={titleRef}
-            className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6"
+            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-4 sm:mb-6"
           >
-Features That Keep You Hooked! 
+            Features That Keep You Hooked!
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-Meet, Chat, Share–Anytime, Anywhere!          </p>
+          <p className="text-lg sm:text-xl text-gray-600 max-w-2xl sm:max-w-3xl mx-auto">
+            Meet, Chat, Share–Anytime, Anywhere!
+          </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
           {features.map((feature, index) => (
             <div
               key={index}
               ref={el => cardsRef.current[index] = el}
-              className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100 group"
+              className="bg-white p-6 sm:p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100 group"
             >
-              <div className="text-4xl mb-4 group-hover:scale-110 transition-transform duration-300">
+              <div className="text-3xl sm:text-4xl mb-3 sm:mb-4 group-hover:scale-110 transition-transform duration-300">
                 {feature.icon}
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-3">
+              <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-2 sm:mb-3">
                 {feature.title}
               </h3>
-              <p className="text-gray-600 leading-relaxed">
+              <p className="text-gray-600 leading-relaxed text-base sm:text-lg">
                 {feature.description}
               </p>
             </div>
           ))}
-        </div>
-
-        {/* Decorative elements */}
-        <div className="absolute top-0 left-0 w-full h-full pointer-events-none overflow-hidden -z-10">
-          <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-blue-500/5 rounded-full blur-3xl"></div>
-          <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-orange-500/5 rounded-full blur-3xl"></div>
         </div>
       </div>
     </section>

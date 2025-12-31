@@ -4,7 +4,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 gsap.registerPlugin(ScrollTrigger);
 
-const StatsSection = () => {
+const InstallSection = () => {
   const sectionRef = useRef(null);
   const counterRef = useRef([]);
 
@@ -126,85 +126,64 @@ const StatsSection = () => {
   return (
     <section
       ref={sectionRef}
-      className="w-full py-20 bg-gradient-to-br flex justify-center items-center from-gray-900 to-black text-white"
-      style={{
-        width: '1920px',
-        minHeight: '750px',
-        maxWidth: '100vw',
-        maxHeight: '70vh'
-      }}
+      className="w-full py-12 md:py-16 lg:py-2 bg-gradient-to-br from-gray-900 to-black text-white flex justify-center items-center"
     >
       <div className="max-w-7xl mx-auto px-4">
-        <div className="text-center mb-8">
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-black">
+        <div className="text-center mb-10 sm:mb-12">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 text-black">
             How to Install Our App
           </h2>
-          <p className="text-xl text-gray-700 max-w-3xl mx-auto">
-           Getting started is quick and easy! Follow these simple steps to install and start using MyBindle today.
+          <p className="text-lg sm:text-xl text-gray-300 max-w-2xl sm:max-w-3xl mx-auto">
+            Getting started is quick and easy! Follow these simple steps to install and start using MyBindle today.
           </p>
         </div>
 
-        <div className="h-[54px] mb-10 flex justify-center items-center gap-6">
-          <div className="text-5xl text-red-400">01</div>
-          <div><img src="/Line 36.png" alt="" /></div>
-          <div  className="text-5xl text-black">02</div>
-         <div><img src="/Line 36.png" alt="" /></div>
-          <div  className="text-5xl text-black">03</div>
+        <div className="flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-6 mb-10 sm:mb-12">
+          <div className="text-2xl sm:text-3xl md:text-4xl text-red-400 font-bold">01</div>
+          <div className="hidden sm:block"><img src="/Line 36.png" alt="" className="h-1 w-72" /></div>
+          <div className="text-2xl sm:text-3xl md:text-4xl text-black font-bold">02</div>
+          <div className="hidden sm:block"><img src="/Line 36.png" alt="" className="h-1 w-72" /></div>
+          <div className="text-2xl sm:text-3xl md:text-4xl text-black font-bold">03</div>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
-          <div className="flex items-center justify-center  space-x-4">
-                <div
-              className="bg-white p-8 rounded-2xl   shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100 group"
-            >
-             
-              <h3 className="text-3xl flex items-center justify-center font-bold text-gray-900 mb-3">
-                Download 
+        <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
+          <div className="flex items-center justify-center">
+            <div className="bg-white p-6 sm:p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100 group w-full max-w-sm">
+              <h3 className="text-xl sm:text-2xl md:text-3xl flex items-center justify-center font-bold text-gray-900 mb-3 sm:mb-4">
+                Download
               </h3>
-              <p className="text-gray-600 flex items-center justify-center leading-relaxed text-2xl">
-                                Open Play Store or App Store
-
+              <p className="text-gray-600 flex items-center justify-center leading-relaxed text-base sm:text-lg md:text-xl text-center">
+                Open Play Store or App Store
               </p>
             </div>
-              </div>
-          <div className="flex items-center justify-center  space-x-4">
-                <div
-              className="bg-white p-8 rounded-2xl   shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100 group"
-            >
-             
-              <h3 className="text-3xl flex items-center justify-center font-bold text-gray-900 mb-3">
-                Install App  
-              </h3>
-              <p className="text-gray-600 flex items-center justify-center leading-relaxed text-2xl">
-                                The app will install automatically.
+          </div>
 
+          <div className="flex items-center justify-center">
+            <div className="bg-white p-6 sm:p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100 group w-full max-w-sm">
+              <h3 className="text-xl sm:text-2xl md:text-3xl flex items-center justify-center font-bold text-gray-900 mb-3 sm:mb-4">
+                Install App
+              </h3>
+              <p className="text-gray-600 flex items-center justify-center leading-relaxed text-base sm:text-lg md:text-xl text-center">
+                The app will install automatically.
               </p>
             </div>
-              </div>
-          <div className="flex items-center justify-center  space-x-4">
-                <div
-              className="bg-white p-8 rounded-2xl   shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100 group"
-            >
-              
-              <h3 className="text-3xl flex items-center justify-center font-bold text-gray-900 mb-3">
+          </div>
+
+          <div className="flex items-center justify-center">
+            <div className="bg-white p-6 sm:p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100 group w-full max-w-sm">
+              <h3 className="text-xl sm:text-2xl md:text-3xl flex items-center justify-center font-bold text-gray-900 mb-3 sm:mb-4">
                 Ready to Use
               </h3>
-              <p className="text-gray-600 flex items-center justify-center leading-relaxed text-2xl">
-                                Sign up or log in to start exploring!
-
+              <p className="text-gray-600 flex items-center justify-center leading-relaxed text-base sm:text-lg md:text-xl text-center">
+                Sign up or log in to start exploring!
               </p>
             </div>
-              </div>
+          </div>
         </div>
 
-        {/* Decorative elements */}
-        <div className="absolute top-0 left-0 w-full h-full pointer-events-none overflow-hidden -z-10">
-          <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-red-500/10 rounded-full blur-3xl"></div>
-          <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl"></div>
-        </div>
       </div>
     </section>
   );
 };
 
-export default StatsSection;
+export default InstallSection;

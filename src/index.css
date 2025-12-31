@@ -166,27 +166,19 @@ body {
 
 section {
   width: 1920px;
-  height: 1163px;
+  /* height: 1163px; */
   max-width: 100vw;
-  max-height: 100vh;
+  /* max-height: 100vh; */
   position: relative;
   scroll-snap-align: start;
 }
 
 @media (max-width: 1024px) {
   section {
-    height: auto;
+    /* height: auto; */
     min-height: 100vh;
     width: 100%;
     padding: 100px 20px;
   }
 }
 
-/* @layer base {
-  * {
-    @apply border-border outline-ring/50;
-  }
-  body {
-    @apply bg-background text-foreground;
-  }
-} */

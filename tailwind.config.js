@@ -4,7 +4,8 @@ module.exports = {
     extend: {
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
-        outfit: ["outfit","sans-serif"]
+        outfit: ["outfit","sans-serif"],
+        avant: ["ITC Avant Garde Gothic Std", "sans-serif"],
       },
       colors: {
         border: "hsl(var(--border))",
