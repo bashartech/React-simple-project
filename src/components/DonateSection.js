@@ -143,15 +143,15 @@ const DonateSection = () => {
       ref={heroRef}
       className="w-full lg:px-4 py-8 md:py-12 lg:py-16 relative overflow-hidden"
     >
-      <div className="flex flex-col lg:flex-row items-center bg-red-500 from-orange-500 via-red-500 to-red-600 rounded-3xl justify-center">
+      <div className="flex flex-col lg:flex-row items-center bg-[#FF5349] from-orange-500 via-red-500 to-red-600 rounded-3xl justify-center">
         <div className="w-full max-w-7xl mx-auto  sm:p-6">
-          <div className="flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-0">
+          <div className="flex flex-col lg:flex-row items-end justify-between gap-8 lg:gap-0">
             {/* Text content */}
-            <div className="w-full lg:w-1/2 flex flex-col items-center lg:items-start text-center lg:text-left">
-              <div className="space-y-6 w-full max-w-3xl mx-auto">
+            <div className="w-full lg:ml-5 lg:mb-[87px] lg:w-1/2 flex flex-col items-center lg:items-start text-center lg:text-left">
+              <div className="space-y-2 w-full max-w-3xl mx-auto ">
                 <h1
                   ref={titleRef}
-                  className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white leading-tight"
+                  className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold lg:w-[900px] text-white leading-tight"
                 >
                   <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl pt-4 sm:pt-6 md:pt-10">Be the Reason Someone Smiles Today!</p>
                 </h1>
@@ -173,24 +173,36 @@ const DonateSection = () => {
             </div>
 
             {/* Image content */}
-            <div className="w-full lg:w-1/2 flex justify-center items-center mt-8 lg:mt-0">
-              <div className="relative w-full max-w-md">
-                <div className="flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-6">
-                  <div className="w-full max-w-xs">
+            <div className="w-full flex lg:h-[500px] lg:w-1/2 justify-center items-end sm:mb-[-25px] md:mb-[-25px] lg:mb-[-25px] lg:mt-0">
+              <div className="relative w-full lg:mr-36 lg:w-[530px]  max-w-md">
+                <div className="flex flex-col lg:w-[680px] sm:flex-row justify-cente lg:mr-10 items-center gap-4 sm:gap-6">
+                  <div className="w-full hidden sm:flex max-w-xs">
                     <img
                       ref={imageRef}
-                      src="/f1.jpg"
+                      src="/mb2.PNG"
                       alt="Donation illustration"
-                      className="w-full pt-40 h-auto object-contain"
+                      className="w-full  pt-[170px] lg:pt-[170px] h-auto object-contain"
                     />
                   </div>
-                  <div className="w-full max-w-xs">
+                 
+                  <div className="w-full hidden sm:flex sm:mt-[54px] lg:mt-[0px] lg:w-[790px] max-w-xs">
                     <img
-                      src="/f2.jpg"
+                      src="/mb1.PNG"
                       alt="Donation illustration"
                       className="w-full h-auto object-contain"
                     />
                   </div>
+                  <div className='flex flex-col sm:hidden'>
+                     <div className=' sm:hidden'>
+
+                    <img src="/iPhone 14 Pro (5).png" alt="" />
+                  </div>
+                  <div>
+                    <img src="/iPhone 14 Pro (3).png" alt="" />
+                  </div>
+                  </div>
+
+
                 </div>
               </div>
             </div>
